@@ -24,7 +24,7 @@ const useStyles = createUseStyles({
     justifyContent: "center",
     alignItems: "center",
     padding: "20px",
-	margin: "2rem",
+    margin: "2rem",
     fontSize: "2rem",
   },
   dataDiv: {
@@ -33,7 +33,7 @@ const useStyles = createUseStyles({
     justifyContent: "center",
     textAlign: "left",
     fontSize: "2rem",
-    /* backgroundColor: "white", */
+    backgroundColor: "white",
     Height: "50%",
     maxWidth: "50%",
     borderRadius: "30px",
@@ -70,7 +70,6 @@ function App() {
   const [text, setText] = useState("");
 
   useEffect(() => {
-    /* setData({}) */
     fetchData(counter);
   }, [counter]);
 
@@ -140,13 +139,15 @@ function App() {
           />
         </div>
         {text}
-        <div className={classes.dataDiv}  >
+        <div className={classes.dataDiv}>
           <div>{data && <p> Full_name: {data.id && data.full_name}</p>}</div>
           <div>
             {data && <p> Description: {data.id && data.description}</p>}
           </div>
           <div>
-            {data && <p> Amount of Stars: {data.id && data.stargazers_count}</p>}
+            {data && (
+              <p> Amount of Stars: {data.id && data.stargazers_count}</p>
+            )}
           </div>
         </div>
 

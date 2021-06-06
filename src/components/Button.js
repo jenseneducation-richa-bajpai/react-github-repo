@@ -1,12 +1,13 @@
 import React from "react";
 import { createUseStyles } from "react-jss";
-import { FaSpinner,FaPlus } from 'react-icons/fa';
+
 
 const useStyles = createUseStyles({
   myButton1: {
     color: "black",
     borderRadius: 30,
     backgroundColor: "white",
+	cursor:'pointer',
     "&:hover": {
       backgroundColor: "black",
       color: "white",
@@ -23,6 +24,7 @@ const useStyles = createUseStyles({
     color: "white",
     borderRadius: 30,
     backgroundColor: "hotpink",
+	cursor:'pointer',
     border: "none",
     "&:hover": {
       backgroundColor: "rebeccapurple",
@@ -36,6 +38,7 @@ const useStyles = createUseStyles({
       fontWeight: "bold",
     },
   },
+ 
   myLabel: {
     fontStyle: "normal",
     fontSize: "1.5rem",

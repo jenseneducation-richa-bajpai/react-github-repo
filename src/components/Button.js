@@ -37,6 +37,14 @@ const useStyles = createUseStyles({
       fontWeight: "bold",
     },
   },
+  "@media (max-width: 576px)": {
+	myButton1: {
+		marginRight: "0",
+    },
+    myButton2: {
+		marginLeft: "0",
+    },
+  },
 
   myLabel: {
     fontStyle: "normal",

@@ -27,6 +27,12 @@ const useStyles = createUseStyles({
     margin: "2rem",
     fontSize: "2rem",
   },
+  "@media (max-width: 576px)": {
+    buttonDiv: {
+      display: "flex",
+      flexDirection: "column",
+    },
+  },
   dataDiv: {
     display: "flex",
     flexDirection: "column",

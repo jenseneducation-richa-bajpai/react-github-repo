@@ -1,6 +1,6 @@
 import React from "react";
 import { createUseStyles } from "react-jss";
-
+// Button component
 const useStyles = createUseStyles({
   myButton1: {
     color: "black",
@@ -38,11 +38,11 @@ const useStyles = createUseStyles({
     },
   },
   "@media (max-width: 576px)": {
-	myButton1: {
-		marginRight: "0",
+    myButton1: {
+      marginRight: "0",
     },
     myButton2: {
-		marginLeft: "0",
+      marginLeft: "0",
     },
   },
 

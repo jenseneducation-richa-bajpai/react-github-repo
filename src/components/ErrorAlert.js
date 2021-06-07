@@ -1,6 +1,7 @@
 import React from "react";
 import { createUseStyles } from "react-jss";
 
+//Error component
 const useStyles = createUseStyles({
   error: {
     justifyContent: "center",

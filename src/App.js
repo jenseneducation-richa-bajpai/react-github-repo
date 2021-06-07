@@ -53,7 +53,7 @@ const useStyles = createUseStyles({
     color: "white",
   },
 });
-
+//repo names
 let repo = {
   0: "eslint/eslint",
   1: "oakwood/front-end-questions",
@@ -79,6 +79,7 @@ function App() {
     fetchData(counter);
   }, [counter]);
 
+//increment
   const increment = () => {
     if (counter < 7) {
       setCounter(counter + 1);
@@ -86,6 +87,7 @@ function App() {
       setText("Our fav repos are over!");
     }
   };
+// decrement
   const decrement = () => {
     if (counter > 0) {
       setCounter(counter - 1);
@@ -93,7 +95,7 @@ function App() {
       setText("You cannot go further!");
     }
   };
-
+//fetch data from api
   const fetchData = async () => {
     if (counter >= 0 && counter < 8) {
       setDisableBtn(true);
@@ -154,7 +156,6 @@ function App() {
             )}
           </div>
         </div>
-
         {showError && <ErrorAlert status={errorStatus} message={errorMsg} />}
       </div>
     </div>

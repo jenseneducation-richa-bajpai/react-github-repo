@@ -11,7 +11,7 @@ const useStyles = createUseStyles({
     maxWidth: "300px",
     borderRadius: "30px",
     margin: "20px",
-    padding: "20px"
+    padding: "20px",
   },
 });
 
@@ -21,7 +21,7 @@ const ErrorAlert = ({ status, message }) => {
     <div className={classes.error}>
       <span>
         ERROR!<br></br>
-		{status}: {message}
+        {status}: {message}
       </span>
     </div>
   );

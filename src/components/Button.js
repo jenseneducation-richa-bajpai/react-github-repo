@@ -1,13 +1,12 @@
 import React from "react";
 import { createUseStyles } from "react-jss";
 
-
 const useStyles = createUseStyles({
   myButton1: {
     color: "black",
     borderRadius: 30,
     backgroundColor: "white",
-	cursor:'pointer',
+    cursor: "pointer",
     "&:hover": {
       backgroundColor: "black",
       color: "white",
@@ -24,7 +23,7 @@ const useStyles = createUseStyles({
     color: "white",
     borderRadius: 30,
     backgroundColor: "hotpink",
-	cursor:'pointer',
+    cursor: "pointer",
     border: "none",
     "&:hover": {
       backgroundColor: "rebeccapurple",
@@ -38,24 +37,23 @@ const useStyles = createUseStyles({
       fontWeight: "bold",
     },
   },
- 
+
   myLabel: {
     fontStyle: "normal",
     fontSize: "1.5rem",
   },
 });
 
-
 const Button = ({ children, callBack, styleBtn, disabled }) => {
   const classes = useStyles();
-  
+
   return (
     <button
       className={styleBtn ? classes.myButton1 : classes.myButton2}
       onClick={callBack}
       disabled={disabled}
     >
-      <span className={classes.myLabel} >
+      <span className={classes.myLabel}>
         {disabled ? "loading..." : `${children}`}
       </span>
     </button>

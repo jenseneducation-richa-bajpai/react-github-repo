@@ -76,7 +76,6 @@ function App() {
   const increment = () => {
     if (counter < 7) {
       setCounter(counter + 1);
-      console.log(counter + 1);
     } else {
       setText("Our fav repos are over!");
     }
@@ -84,9 +83,8 @@ function App() {
   const decrement = () => {
     if (counter > 0) {
       setCounter(counter - 1);
-      console.log(counter - 1);
     } else {
-      setText("Our fav repos are over!");
+      setText("You cannot go further!");
     }
   };
 
@@ -140,13 +138,13 @@ function App() {
         </div>
         {text}
         <div className={classes.dataDiv}>
-          <div>{data && <p> Full_name: {data.id && data.full_name}</p>}</div>
+          <div>{data && <p> 1. Full_name: {data.id && data.full_name}</p>}</div>
           <div>
-            {data && <p> Description: {data.id && data.description}</p>}
+            {data && <p> 2. Description: {data.id && data.description}</p>}
           </div>
           <div>
             {data && (
-              <p> Amount of Stars: {data.id && data.stargazers_count}</p>
+              <p> 3. Amount of Stars: {data.id && data.stargazers_count}</p>
             )}
           </div>
         </div>
